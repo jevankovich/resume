@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+.contact {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.contact a {
+    float: right;
+}
+
+header span {
+    margin: 0.25em 0;
+}
+
+.school {
+    float: left;
+    margin-left: 2.5cm;
+}
+
+.home {
+    float: right;
+    margin-right: 2.5cm;
+}
+
+header:after {
+    clear: both;
+    display: block;
+    height: 0;
+    content: ' ';
+}
