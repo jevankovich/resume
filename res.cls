@@ -215,7 +215,7 @@
 %
 \def\@printcentername{\begingroup
   % print the name centered
-  \leavevmode\hbox to \textwidth{\hfil\@tablebox{\namefont\@name}\hfil}\par
+  \leavevmode\hbox to \textwidth{\hfil\@nametable{\namefont\@name}\hfil}\par
   \@ifundefined{@addressone}{%
     % do nothing
   }{%
@@ -481,6 +481,7 @@
 % create a multiline box.
 %
 \def\@tablebox#1{\begin{tabular}[t]{@{}l@{\extracolsep{\fill}}}#1\end{tabular}}
+\def\@nametable#1{\begin{tabular}[t]{@{}c@{\extracolsep{\fill}}}#1\end{tabular}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % use this to define your name
